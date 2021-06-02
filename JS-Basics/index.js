@@ -104,3 +104,80 @@ function square(number){
 }
 
 console.log(square(3)); // calling the function to calculate the square of 3 and print on the console
+
+
+// _________________________________________________________________________________
+
+// Operators in javascript - Arithmetic, Asignment, Comparison, Logical and Bitwise
+// Arithmetic - used for performing calculations
+let x = 10;
+let y = 3;
+
+console.log('Addition ', x + y);
+console.log('Subtraction ', x - y);
+console.log('Multiplication ', x * y);
+console.log('Division ', x / y);
+console.log('Modulus ', x % y);
+console.log('Exponention ', x ** y);
+
+// Increment (++)
+console.log(++x) // output 11
+console.log(x++) // output 10
+console.log(x) // output 11
+// Decrement (--)
+console.log(--x) // output 9
+console.log(x--) // output 10
+console.log(x) // output 9
+
+
+// Assignment Operators i.e =
+
+let num = 10;
+
+num = num + 5; // same as num += 5
+num = num * 7; // same as num *= 7 
+
+// Comparison Operators - used to compare the values
+let a = 1;
+
+// relational operators
+console.log(a > 1);
+console.log(a >= 1);
+console.log(a <= 1);
+console.log(a < 1);
+
+// Equality operators
+console.log(a === 1);
+console.log(a !== 1);
+
+// Equality operators i,e === and ==
+// Strict Equality (checks on the Type + Value of both operands if they are same)
+console.log(1 === 1); // true
+console.log('1' === 1); // false
+
+// Lose Equality ( Value )
+console.log(1 == 1); // true
+console.log('1' == 1); // true
+console.log(true == 1); // true
+
+//Ternary Operators
+// case 
+// if a customer has more than 100 points then he/she is a gold customer otherwise silver customer
+let points = 120;
+let type = points > 100 ? 'Gold' : 'Silver';
+console.log(type);
+
+// Logical operators with Non-Booleans
+// falsy (false) values e.g undefined, null, 0, false, '', NaN-not a number
+// Anything that is not Falsy is -> Truthy 
+
+let userColor = undefined;
+let defaultColor = 'Green';
+let currentColor = userColor || defaultColor;
+console.log(currentColor)
+
+// Bitwise operators e.g | and & bitwise or and bitwise and respectively. 
+
+// operators precedence - its like the BODMAS rule applied
+let calc = (2 * 7) + 4
+console.log(calc);
